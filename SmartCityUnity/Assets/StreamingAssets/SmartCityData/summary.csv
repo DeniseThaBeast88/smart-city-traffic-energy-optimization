@@ -1,0 +1,23 @@
+group,name,metric,value
+traffic,Fixed-time,avg_delay_s,42.63
+traffic,Fixed-time,p95_delay_s,81.96
+traffic,Fixed-time,throughput_vph,2052.02
+traffic,Fixed-time,total_wait_veh_h,583.13
+traffic,Q-learning (RL),avg_delay_s,19.18
+traffic,Q-learning (RL),p95_delay_s,42.04
+traffic,Q-learning (RL),throughput_vph,2054.01
+traffic,Q-learning (RL),total_wait_veh_h,262.63
+traffic,Rule-based actuated,avg_delay_s,23.03
+traffic,Rule-based actuated,p95_delay_s,56.66
+traffic,Rule-based actuated,throughput_vph,2054.38
+traffic,Rule-based actuated,total_wait_veh_h,315.4
+energy,AI-optimized,grid_import_kwh,18857.2
+energy,AI-optimized,peak_grid_kw,1319.4
+energy,AI-optimized,energy_cost_usd,2416.5
+energy,AI-optimized,energy_waste_kwh,28.7
+energy,AI-optimized,lighting_kwh,202.7
+energy,Baseline,grid_import_kwh,19992.6
+energy,Baseline,peak_grid_kw,1447.6
+energy,Baseline,energy_cost_usd,2769.1
+energy,Baseline,energy_waste_kwh,2032.9
+energy,Baseline,lighting_kwh,496.1
