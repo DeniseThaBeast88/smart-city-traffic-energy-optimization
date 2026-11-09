@@ -1,0 +1,209 @@
+{
+  "traffic": {
+    "('avg_delay_s', 'mean')": {
+      "Fixed-time": 42.626,
+      "Q-learning (RL)": 19.179,
+      "Rule-based actuated": 23.029
+    },
+    "('avg_delay_s', 'std')": {
+      "Fixed-time": 0.36,
+      "Q-learning (RL)": 0.183,
+      "Rule-based actuated": 0.053
+    },
+    "('p95_delay_s', 'mean')": {
+      "Fixed-time": 81.957,
+      "Q-learning (RL)": 42.042,
+      "Rule-based actuated": 56.658
+    },
+    "('p95_delay_s', 'std')": {
+      "Fixed-time": 1.544,
+      "Q-learning (RL)": 0.43,
+      "Rule-based actuated": 0.522
+    },
+    "('throughput_vph', 'mean')": {
+      "Fixed-time": 2052.017,
+      "Q-learning (RL)": 2054.008,
+      "Rule-based actuated": 2054.383
+    },
+    "('throughput_vph', 'std')": {
+      "Fixed-time": 13.343,
+      "Q-learning (RL)": 11.639,
+      "Rule-based actuated": 10.756
+    },
+    "('total_wait_veh_h', 'mean')": {
+      "Fixed-time": 583.128,
+      "Q-learning (RL)": 262.627,
+      "Rule-based actuated": 315.404
+    },
+    "('total_wait_veh_h', 'std')": {
+      "Fixed-time": 6.239,
+      "Q-learning (RL)": 3.747,
+      "Rule-based actuated": 1.304
+    },
+    "('signal_switches', 'mean')": {
+      "Fixed-time": 22869.0,
+      "Q-learning (RL)": 33850.6,
+      "Rule-based actuated": 21958.8
+    },
+    "('signal_switches', 'std')": {
+      "Fixed-time": 0.0,
+      "Q-learning (RL)": 190.098,
+      "Rule-based actuated": 82.509
+    },
+    "('vehicles_completed', 'mean')": {
+      "Fixed-time": 49248.4,
+      "Q-learning (RL)": 49296.2,
+      "Rule-based actuated": 49305.2
+    },
+    "('vehicles_completed', 'std')": {
+      "Fixed-time": 320.236,
+      "Q-learning (RL)": 279.338,
+      "Rule-based actuated": 258.146
+    }
+  },
+  "energy": {
+    "('grid_import_kwh', 'mean')": {
+      "AI-optimized": 18857.174,
+      "Baseline": 19992.558
+    },
+    "('grid_import_kwh', 'std')": {
+      "AI-optimized": 229.883,
+      "Baseline": 86.497
+    },
+    "('peak_grid_kw', 'mean')": {
+      "AI-optimized": 1319.391,
+      "Baseline": 1447.581
+    },
+    "('peak_grid_kw', 'std')": {
+      "AI-optimized": 18.335,
+      "Baseline": 36.859
+    },
+    "('load_kwh', 'mean')": {
+      "AI-optimized": 32251.909,
+      "Baseline": 32545.303
+    },
+    "('load_kwh', 'std')": {
+      "AI-optimized": 44.932,
+      "Baseline": 44.866
+    },
+    "('pv_generated_kwh', 'mean')": {
+      "AI-optimized": 13254.471,
+      "Baseline": 13254.471
+    },
+    "('pv_generated_kwh', 'std')": {
+      "AI-optimized": 209.051,
+      "Baseline": 209.051
+    },
+    "('pv_curtailed_kwh', 'mean')": {
+      "AI-optimized": 10.274,
+      "Baseline": 1721.086
+    },
+    "('pv_curtailed_kwh', 'std')": {
+      "AI-optimized": 13.514,
+      "Baseline": 145.411
+    },
+    "('lighting_kwh', 'mean')": {
+      "AI-optimized": 202.731,
+      "Baseline": 496.125
+    },
+    "('lighting_kwh', 'std')": {
+      "AI-optimized": 1.063,
+      "Baseline": 0.0
+    },
+    "('lighting_waste_kwh', 'mean')": {
+      "AI-optimized": 18.43,
+      "Baseline": 311.824
+    },
+    "('lighting_waste_kwh', 'std')": {
+      "AI-optimized": 0.097,
+      "Baseline": 0.966
+    },
+    "('storage_losses_kwh', 'mean')": {
+      "AI-optimized": 247.749,
+      "Baseline": 180.64
+    },
+    "('storage_losses_kwh', 'std')": {
+      "AI-optimized": 2.08,
+      "Baseline": 2.037
+    },
+    "('sharing_losses_kwh', 'mean')": {
+      "AI-optimized": 58.512,
+      "Baseline": 0.0
+    },
+    "('sharing_losses_kwh', 'std')": {
+      "AI-optimized": 4.587,
+      "Baseline": 0.0
+    },
+    "('energy_waste_kwh', 'mean')": {
+      "AI-optimized": 28.704,
+      "Baseline": 2032.91
+    },
+    "('energy_waste_kwh', 'std')": {
+      "AI-optimized": 13.509,
+      "Baseline": 146.206
+    },
+    "('energy_cost_usd', 'mean')": {
+      "AI-optimized": 2416.533,
+      "Baseline": 2769.05
+    },
+    "('energy_cost_usd', 'std')": {
+      "AI-optimized": 34.128,
+      "Baseline": 15.228
+    },
+    "('solar_utilization', 'mean')": {
+      "AI-optimized": 0.999,
+      "Baseline": 0.87
+    },
+    "('solar_utilization', 'std')": {
+      "AI-optimized": 0.001,
+      "Baseline": 0.009
+    },
+    "('energy_efficiency', 'mean')": {
+      "AI-optimized": 0.999,
+      "Baseline": 0.941
+    },
+    "('energy_efficiency', 'std')": {
+      "AI-optimized": 0.0,
+      "Baseline": 0.004
+    },
+    "('seed', 'mean')": {
+      "AI-optimized": 3.0,
+      "Baseline": 3.0
+    },
+    "('seed', 'std')": {
+      "AI-optimized": 1.581,
+      "Baseline": 1.581
+    }
+  },
+  "stress": {
+    "avg_delay_s": {
+      "Fixed-time": 73.747,
+      "Q-learning (RL)": 22.269,
+      "Rule-based actuated": 25.329
+    },
+    "p95_delay_s": {
+      "Fixed-time": 292.067,
+      "Q-learning (RL)": 50.246,
+      "Rule-based actuated": 60.369
+    },
+    "throughput_vph": {
+      "Fixed-time": 2465.125,
+      "Q-learning (RL)": 2459.028,
+      "Rule-based actuated": 2466.194
+    },
+    "left_in_system": {
+      "Fixed-time": 13.667,
+      "Q-learning (RL)": 12.0,
+      "Rule-based actuated": 13.0
+    }
+  },
+  "forecaster": {
+    "mae_kw": 11.0253089087,
+    "mape_pct": 3.7648497609,
+    "r2": 0.9957368892,
+    "naive_mae_kw": 19.9712306379,
+    "n_train": 5376,
+    "n_test": 2688
+  },
+  "runtime_s": 237.4822359085
+}

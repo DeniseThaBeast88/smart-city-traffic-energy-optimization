@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.8, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3.14
+cachedir: .pytest_cache
+rootdir: /home/user/workspace/smart_city_project
+plugins: platformdirs-4.13.5, ddtrace-4.16.0, anyio-4.15.1
+collecting ... collected 14 items
+
+tests/test_smart_city.py::test_vehicle_conservation PASSED               [  7%]
+tests/test_smart_city.py::test_no_conflicting_greens PASSED              [ 14%]
+tests/test_smart_city.py::test_yellow_interval_always_applied PASSED     [ 21%]
+tests/test_smart_city.py::test_fixed_time_cycle_length PASSED            [ 28%]
+tests/test_smart_city.py::test_delays_non_negative PASSED                [ 35%]
+tests/test_smart_city.py::test_saturation_flow_respected PASSED          [ 42%]
+tests/test_smart_city.py::test_link_capacity_respected PASSED            [ 50%]
+tests/test_smart_city.py::test_battery_state_of_charge_bounds PASSED     [ 57%]
+tests/test_smart_city.py::test_energy_balance PASSED                     [ 64%]
+tests/test_smart_city.py::test_adaptive_lighting_never_below_safety_level PASSED [ 71%]
+tests/test_smart_city.py::test_forecaster_accuracy PASSED                [ 78%]
+tests/test_smart_city.py::test_q_learning_updates_values PASSED          [ 85%]
+tests/test_smart_city.py::test_trained_agent_beats_fixed_time PASSED     [ 92%]
+tests/test_smart_city.py::test_unity_trace_matches_simulation PASSED     [100%]
+
+============================== 14 passed in 5.45s ==============================

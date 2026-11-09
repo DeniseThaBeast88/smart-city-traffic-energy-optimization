@@ -1,0 +1,76 @@
+[16:49:27] saved figure outputs/figures/fig01_city_map.png
+[16:49:28] Step 1/5: building city map
+[16:49:28] saved figure outputs/figures/fig01_city_map.png
+[16:49:28] Step 2/5: training Q-learning agent (240 episodes)
+[16:49:36]   episode  20  eps=0.53  avg wait=19.5 s  states=166
+[16:49:43]   episode  40  eps=0.46  avg wait=24.5 s  states=205
+[16:49:51]   episode  60  eps=0.39  avg wait=20.4 s  states=213
+[16:49:59]   episode  80  eps=0.32  avg wait=16.5 s  states=227
+[16:50:07]   episode 100  eps=0.25  avg wait=34.4 s  states=237
+[16:50:14]   episode 120  eps=0.17  avg wait=16.4 s  states=258
+[16:50:23]   episode 140  eps=0.10  avg wait=14.6 s  states=263
+[16:50:32]   episode 160  eps=0.05  avg wait=28.9 s  states=274
+[16:50:41]   episode 180  eps=0.05  avg wait=10.9 s  states=289
+[16:50:50]   episode 200  eps=0.05  avg wait=17.2 s  states=293
+[16:50:59]   episode 220  eps=0.05  avg wait=20.9 s  states=295
+[16:51:09]   episode 240  eps=0.05  avg wait=15.8 s  states=295
+[16:51:09] saved figure outputs/figures/fig02_q_learning_training.png
+[16:51:09] Step 3/5: training day-ahead load forecaster (gradient boosting)
+[16:51:11]   forecaster MAE=11.03 kW  MAPE=3.76%  R2=0.9957  naive MAE=19.97 kW
+[16:51:12] saved figure outputs/figures/fig08_load_forecast.png
+[16:51:12] Step 4/5: evaluating controllers on 5 independent 24-hour days
+[16:51:14]   seed 1  Fixed-time           delay=42.49 s  p95=81.2 s  throughput=2070 veh/h  conflicts=0
+[16:51:16]   seed 1  Rule-based actuated  delay=22.96 s  p95=56.2 s  throughput=2065 veh/h  conflicts=0
+[16:51:21]   seed 1  Q-learning (RL)      delay=19.24 s  p95=42.2 s  throughput=2071 veh/h  conflicts=0
+[16:51:23]   seed 2  Fixed-time           delay=43.25 s  p95=84.6 s  throughput=2053 veh/h  conflicts=0
+[16:51:25]   seed 2  Rule-based actuated  delay=23.04 s  p95=56.3 s  throughput=2064 veh/h  conflicts=0
+[16:51:30]   seed 2  Q-learning (RL)      delay=19.38 s  p95=42.6 s  throughput=2058 veh/h  conflicts=0
+[16:51:32]   seed 3  Fixed-time           delay=42.57 s  p95=81.9 s  throughput=2034 veh/h  conflicts=0
+[16:51:34]   seed 3  Rule-based actuated  delay=23.00 s  p95=56.3 s  throughput=2048 veh/h  conflicts=0
+[16:51:39]   seed 3  Q-learning (RL)      delay=18.91 s  p95=41.4 s  throughput=2040 veh/h  conflicts=0
+[16:51:41]   seed 4  Fixed-time           delay=42.49 s  p95=81.0 s  throughput=2056 veh/h  conflicts=0
+[16:51:43]   seed 4  Rule-based actuated  delay=23.05 s  p95=57.0 s  throughput=2055 veh/h  conflicts=0
+[16:51:47]   seed 4  Q-learning (RL)      delay=19.09 s  p95=41.9 s  throughput=2047 veh/h  conflicts=0
+[16:51:49]   seed 5  Fixed-time           delay=42.33 s  p95=81.1 s  throughput=2047 veh/h  conflicts=0
+[16:51:52]   seed 5  Rule-based actuated  delay=23.10 s  p95=57.4 s  throughput=2040 veh/h  conflicts=0
+[16:51:56]   seed 5  Q-learning (RL)      delay=19.26 s  p95=42.0 s  throughput=2054 veh/h  conflicts=0
+[16:51:57] Step 5/5: stress test (+20% demand) and figures
+[16:52:25]   stress test means:
+                     avg_delay_s  p95_delay_s  throughput_vph  left_in_system
+controller                                                                   
+Fixed-time                 73.75       292.07         2465.12           13.67
+Q-learning (RL)            22.27        50.25         2459.03           12.00
+Rule-based actuated        25.33        60.37         2466.19           13.00
+[16:52:25] saved figure outputs/figures/fig03_delay_by_hour.png
+[16:52:26] saved figure outputs/figures/fig04_traffic_metrics.png
+[16:52:26] saved figure outputs/figures/fig05_queue_heatmaps.png
+[16:52:26] saved figure outputs/figures/fig06_energy_heatmaps.png
+[16:52:26] saved figure outputs/figures/fig07_energy_dispatch.png
+[16:52:26] saved figure outputs/figures/fig09_density_vs_energy.png
+[16:52:27] saved figure outputs/figures/fig10_energy_metrics.png
+[16:52:55] saved animation outputs/city_simulation.mp4
+[16:53:25] saved animation outputs/city_simulation.gif
+[16:53:25] Traffic summary (mean over seeds):
+                    avg_delay_s       p95_delay_s       throughput_vph        total_wait_veh_h       signal_switches         vehicles_completed        
+                           mean   std        mean   std           mean    std             mean   std            mean     std               mean     std
+controller                                                                                                                                             
+Fixed-time                42.63  0.36       81.96  1.54        2052.02  13.34           583.13  6.24         22869.0    0.00            49248.4  320.24
+Q-learning (RL)           19.18  0.18       42.04  0.43        2054.01  11.64           262.63  3.75         33850.6  190.10            49296.2  279.34
+Rule-based actuated       23.03  0.05       56.66  0.52        2054.38  10.76           315.40  1.30         21958.8   82.51            49305.2  258.15
+[16:53:25] Energy summary (mean over seeds):
+policy              AI-optimized  Baseline
+grid_import_kwh         18857.17  19992.56
+peak_grid_kw             1319.39   1447.58
+load_kwh                32251.91  32545.30
+pv_generated_kwh        13254.47  13254.47
+pv_curtailed_kwh           10.27   1721.09
+lighting_kwh              202.73    496.12
+lighting_waste_kwh         18.43    311.82
+storage_losses_kwh        247.75    180.64
+sharing_losses_kwh         58.51      0.00
+energy_waste_kwh           28.70   2032.91
+energy_cost_usd          2416.53   2769.05
+solar_utilization           1.00      0.87
+energy_efficiency           1.00      0.94
+seed                        3.00      3.00
+[16:53:25] Finished in 237.5 s
